@@ -1,0 +1,54 @@
+
+================================================================================
+                          FINANCIAL WELL-BEING REPORT                           
+================================================================================
+
+CUSTOMER PROFILE:
+  Monthly Income: Rs.50,000.00
+  Fixed Expenses: Rs.7,500.00
+  Variable Expenses: Rs.5,000.00
+  Savings & Investments: Rs.32,500.00
+  Existing Loans & Liabilities: Rs.7,500.00
+  Debt-to-Income Ratio: 15.0%
+  Investment Approach: Moderate
+  Spending Behavior: Balanced
+
+FINANCIAL HEALTH ASSESSMENT:
+  Overall Score: 66 / 100 (Good)
+  Your financial health is above average, but there are several areas to strengthen.
+
+KEY FINANCIAL METRICS:
+  Income Stability: 65.0%
+  Debt-to-Income Ratio: 15.0%
+  Credit Utilization: 15.0%
+  Monthly Savings Rate: 75.0%
+  Financial Resilience: 2.6 months
+  Financial Stress Index: 0.23 (0-5 scale)
+
+RECOMMENDATIONS:
+
+  Priority Actions:
+    1. No critical issues identified. Focus on optimization strategies.
+
+  Short-term Strategies:
+    1. Maintain current financial habits while looking for optimization opportunities.
+
+  Medium-term Goals:
+    1. Current emergency fund covers 2.6 months. Build it to cover 3-6 months of expenses.
+
+  Long-term Planning:
+    1. You're in a good position for major financial goals like home ownership or education funding.
+
+FINANCIAL OPPORTUNITIES:
+  - Focus on debt reduction to improve financial flexibility
+  - Build emergency fund to at least 6 months of expenses
+  - Consider upskilling to increase earning potential
+
+DISCLAIMER:
+  This report is for informational purposes only and does not constitute financial advice.
+  Please consult with a qualified financial advisor for personalized guidance.
+
+================================================================================
+                        Report generated on: 2026-03-12                         
+================================================================================
+
