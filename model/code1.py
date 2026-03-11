@@ -54,12 +54,16 @@ def preprocess_data(df):
 
     # Target: Financial Well-being Score
     if 'Financial Well-being Score' not in df_processed.columns:
-        df_processed['Financial Well-being Score'] = (
+        np.random.seed(42)
+        base_score = (
             df_processed['Income Stability Score'].fillna(0.5) * 0.35 +
             (1 - df_processed['Credit Utilization Rate'].fillna(0.5)) * 0.25 +
             df_processed['Monthly Savings Percentage'].fillna(0.5) * 0.25 +
             (1 - df_processed['Financial Volatility Index'].fillna(0.5)) * 0.15
-        ).round(2)
+        )
+        # Add random noise to simulate real-world variability
+        noise = np.random.normal(0, 0.025, size=len(base_score))
+        df_processed['Financial Well-being Score'] = np.clip(base_score + noise, 0, 1).round(2)
 
     return df_processed
 
