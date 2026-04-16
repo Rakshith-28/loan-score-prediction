@@ -4,6 +4,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, r2_score, mean_squared_error
+import joblib
+import os
 from datetime import datetime
 
 # ========================== PART 1: Load and Preprocess Data ========================== #
@@ -81,6 +83,12 @@ numerical_features = [
 ]
 target = 'Financial Well-being Score'
 
+# Ensure required categorical columns exist even if source dataset omits them.
+if 'Spending Behavior' not in df_processed.columns:
+    df_processed['Spending Behavior'] = 'Balanced'
+if 'Investment Strategy' not in df_processed.columns:
+    df_processed['Investment Strategy'] = 'Moderate'
+
 # Encode categorical features
 label_encoders = {}
 for col in categorical_columns:
@@ -125,6 +133,16 @@ print(f"  Root Mean Squared Error (RMSE): {rmse:.4f}")
 print(f"  R-squared (R2) Score: {r2:.4f}")
 print(f"  Accuracy (within 5% tolerance): {accuracy:.1f}%")
 print("="*50)
+
+# Persist artifacts for interactive inference script.
+artifact_dir = os.path.join(os.path.dirname(__file__), 'model')
+os.makedirs(artifact_dir, exist_ok=True)
+
+joblib.dump(model, os.path.join(artifact_dir, 'financial_model.pkl'))
+joblib.dump(scaler, os.path.join(artifact_dir, 'scaler.pkl'))
+joblib.dump(label_encoders, os.path.join(artifact_dir, 'label_encoders.pkl'))
+
+print("\nTrained artifacts saved successfully: financial_model.pkl, scaler.pkl, label_encoders.pkl")
 
 # ========================== PART 4: Predict for a Sample Customer ========================== #
 

@@ -1,0 +1,24 @@
+
+    FINANCIAL HEALTH REPORT
+    ==================================================
+    INCOME & EXPENSES:
+    - Monthly Income: Rs.100,000.00
+    - Fixed Expenses: Rs.25,000.00
+    - Variable Expenses: Rs.25,000.00
+    
+    ASSETS & LIABILITIES:
+    - Savings: Rs.50,000.00
+    - Debt: Rs.10,000.00
+    
+    KEY METRICS:
+    - Income Stability: 50.0%
+    - Debt-to-Income: 10.0%
+    - Savings Rate: 50.0%
+    
+    FINANCIAL SCORE: 77/100
+    ==================================================
+    RECOMMENDATIONS:
+    1. [GOOD] Good savings rate - maintain this
+
+Generated on: 2026-04-16 18:12
+==================================================
